@@ -66,19 +66,21 @@ const NavBar = () => {
   return (
     <div
       ref={navContainerRef}
-      className="fixed inset-x-0 top-4 z-50 h-20 border-none transition-all duration-700 sm:inset-x-6 main_black_nav"
+      className="fixed inset-x-0 top-4 z-50 h-20 border-none transition-all duration-700 sm:inset-x-6 main_black_nav h-[6rem]"
     >
       <header className="absolute top-1/2 w-full -translate-y-1/2">
         <nav className="flex size-full items-center justify-between p-4">
           {/* Logo and Product button */}
           <div className="flex items-center gap-7 nav_logo">
+            <a href={`/`}>
             <img src="/img/logo.png" alt="logo" className="w-20" />
+            </a>
           </div>
 
           {/* Navigation Links and Audio Button */}
           <div className="flex h-full items-center">
             <div className="hidden md:block">
-              {navItems.map((item, index) => (
+              {/* {navItems.map((item, index) => (
                 <a
                   key={index}
                   href={`#${item.toLowerCase()}`}
@@ -86,7 +88,35 @@ const NavBar = () => {
                 >
                   {item}
                 </a>
-              ))}
+              ))} */}
+               <a
+                  key="1"
+                  href={`/events`}
+                  className=" nav_click events_technobash"
+                >
+                  EVENTS
+                </a>
+                <a
+                 key="2"
+                  href={`#about`}
+                  className="nav-hover-btn nav_click"
+                >
+                  About
+                </a>
+                <a
+                 key="3"
+                  href={`#register`}
+                  className="nav-hover-btn nav_click"
+                >
+                  Register
+                </a>
+                <a
+                 key="4"
+                  href={`#contact`}
+                  className="nav-hover-btn nav_click"
+                >
+                  Contact
+                </a>
             </div>
 
             <div className="nav_mobile_register">

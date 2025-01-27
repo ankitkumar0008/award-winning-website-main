@@ -193,7 +193,7 @@ const Features = () => (
             src="videos/callofduty.mp4"
             title={
               <>
-                call <b>of</b> duty
+                project paragon & call <b>of</b> duty
               </>
             }
             content="Call of Duty Mobile Tournament
