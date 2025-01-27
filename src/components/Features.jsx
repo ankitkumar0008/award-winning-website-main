@@ -205,7 +205,7 @@ Two ultimate champions will rise victorious"
             description="Come join us for the Battle Royale and show us your amazing gaming skills and win cash prizes."
             isComingSoon
             Register_Link="https://forms.gle/CzKoofPv3HKyayZp8"
-            More_Link="/pdf/prepathon.pdf"
+            More_Link="/pdf/Callofduty.pdf"
           ></BentoCard>
         </BentoTilt>
 
