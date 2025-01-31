@@ -27,3 +27,20 @@
         height: 7rem;
     }
 }
+
+
+.events_technobash{
+    color: #000;
+    background: #fff;
+    padding: 7px 35px;
+    border-radius: 30px;
+    border: 0.5px solid black;
+    font-size: 15px;
+    line-height: 1rem;
+}
+
+.events_technobash:hover{
+    color: #fff;
+    background: #000;
+    border: 0.5px solid #fff;
+}

@@ -117,7 +117,7 @@ const courseDetails = [
 
 const FooterWithCourses = () => {
   return (
-    <footer className="footer w-screen bg-[#5542ff] text-black">
+    <footer id="contact" className="footer w-screen bg-[#5542ff] text-black">
       <div className="container mx-auto flex flex-col gap-12 px-4 py-8">
         <AnimatedTitle
           title="Website Development Team"
@@ -166,8 +166,8 @@ const FooterWithCourses = () => {
         </div>
 
         {/* Footer Content Section */}
-        <div className="footer-content flex justify-between items-center">
-          <p className="text-sm font-light tyre">©Nova 2024. All rights reserved</p>
+        <div className="footer-content flex justify-between items-center text-white">
+          <p className="text-white text-sm md:text-2xl font-light tyre">© Technobash 2025. All rights reserved</p>
 
           {/* Single Instagram Link */}
           <div className="text-lg izaat">
@@ -175,19 +175,19 @@ const FooterWithCourses = () => {
               href="https://www.instagram.com/technobash_2k25?igsh=ODVkYTJpeHNnZjg="
               target="_blank"
               rel="noopener noreferrer"
-              className="text-black transition-colors duration-500 ease-in-out hover:text-white utar"
+              className="text-black transition-colors duration-500 ease-in-out hover:text-white utar \\cursor-pointer"
             >
               <FaInstagram />
             </a>
           </div>
 
 
-          <a
+          {/* <a
             href="#privacy-policy"
             className="text-sm font-light hover:underline tyre"
           >
             Privacy Policy
-          </a>
+          </a> */}
         </div>
       </div>
     </footer>

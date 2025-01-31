@@ -73,7 +73,7 @@ const NavBar = () => {
           {/* Logo and Product button */}
           <div className="flex items-center gap-7 nav_logo">
             <a href={`/`}>
-            <img src="/img/logo.png" alt="logo" className="w-20" />
+              <img src="/img/logo.png" alt="logo" className="w-20" />
             </a>
           </div>
 
@@ -89,43 +89,42 @@ const NavBar = () => {
                   {item}
                 </a>
               ))} */}
-               <a
-                  key="1"
-                  href={`/events`}
-                  className=" nav_click events_technobash"
-                >
-                  EVENTS
-                </a>
-                <a
-                 key="2"
-                  href={`#about`}
-                  className="nav-hover-btn nav_click"
-                >
-                  About
-                </a>
-                <a
-                 key="3"
-                  href={`#register`}
-                  className="nav-hover-btn nav_click"
-                >
-                  Register
-                </a>
-                <a
-                 key="4"
-                  href={`#contact`}
-                  className="nav-hover-btn nav_click"
-                >
-                  Contact
-                </a>
+
+              <a
+                key="1"
+                href={`#events`}
+                className=" nav_click events_technobash"
+              >
+                EVENTS
+              </a>
+
+
+              <a
+                key="2"
+                href={`#about`}
+                className="nav-hover-btn nav_click"
+              >
+                About
+              </a>
+
+              <a
+                key="4"
+                href={`#contact`}
+                className="nav-hover-btn nav_click"
+              >
+                Contact
+              </a>
             </div>
 
             <div className="nav_mobile_register">
-                <a
-                  href={`#register`}
-                  className="nav-hover-btn nav_click"
-                >
-                  Register
-                </a>
+              <a
+                key="0"
+                href={`#events`}
+                className="nav-hover-btn nav_click"
+              >
+                EVENT
+              </a>
+
             </div>
 
             <button
@@ -138,7 +137,7 @@ const NavBar = () => {
                 src="/audio/loop.mp3"
                 loop
               />
-              {[1, 2, 3, 4,5,6,7].map((bar) => (
+              {[1, 2, 3, 4, 5, 6, 7].map((bar) => (
                 <div
                   key={bar}
                   className={clsx("indicator-line", {

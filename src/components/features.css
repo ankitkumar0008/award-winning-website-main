@@ -12,6 +12,11 @@
 .main_card_body{
   height: 1500px;
 }
+
+.main_card_body2{
+  min-height: 290px;
+  height: fit-content;
+}
   .ag-courses-item_link {
     background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent overlay */
     padding: 20px;
@@ -360,6 +365,10 @@
       height: 3000px;
     }
 
+    .main_card_body2{
+      height: fit-content;
+    }
+
     .cardL{
       width:90vw;
       margin-right: auto;
@@ -387,6 +396,10 @@
 
     .main_card_body{
       height: 790vw;
+    }
+
+    .main_card_body2{
+      height: fit-content;
     }
 
     .cardL{

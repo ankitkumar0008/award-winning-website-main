@@ -40,6 +40,7 @@ export const BentoTilt = ({ children, className = "" }) => {
 };
 
 export const BentoCard = ({
+  imgSrc,
   src,
   title,
   description,
@@ -124,7 +125,7 @@ export const BentoCard = ({
           </a>
 
 
-              {/* More button */}
+          {/* More button */}
           <a
             onClick={() => openPDF(More_Link)}
             // href={More_Link}
@@ -151,7 +152,6 @@ export const BentoCard = ({
     </div>
   );
 };
-
 const Features = () => (
   <section className="bg-black pb-52">
     <div className="container mx-auto px-3 md:px-10">
@@ -230,17 +230,17 @@ Let the battlegrounds decide who truly reigns supreme!"
 
         <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0 cardL">
           <BentoCard
-            src="videos/feature-4.mp4"
+            src="videos/ff.mp4"
             title={
               <>
-                pix<b>el</b> p<b>e</b>rfect
+                <b>free fire</b>
               </>
             }
-            content="PIXEL PERFECT is an exciting event that challenges participants to showcase their design and development skills. In Round 1, participants will focus on crafting a visually appealing and user-friendly design for an application. This round emphasizes creativity and precision in design. In Round 2, the challenge escalates as participants develop the backend to bring their design to life. The application must be fully functional by the end of this round. PIXEL PERFECT provides a comprehensive platform for participants to demonstrate their expertise in both design and backend development, combining creativity with technical prowess."
-            description="To create a website with innovative and creative designs."
+            content="FREE FIRE SHOWDOWN is a thrilling event that puts participants' gaming skills to the test in an intense battle for survival. In Round 1, players will compete in high-stakes matches, showcasing their strategy, accuracy, and quick decision-making. Only the top-performing players will advance to the next stage. In Round 2, the competition intensifies as finalists face off in a series of challenging battle royale rounds. Precision, teamwork, and survival instincts will determine the ultimate champion. FREE FIRE SHOWDOWN offers an adrenaline-fueled experience, bringing together gaming enthusiasts to prove their skills in the ultimate survival challenge."
+            description="To showcase exceptional gaming skills through strategic battles and intense survival challenges."
             isComingSoon
-            Register_Link="https://docs.google.com/forms/d/e/1FAIpQLSfF-Qo7FKf02O1gJ4p6uuSHWEf6dvIyZnFyopqVjSftEfNlSw/viewform?usp=header"
-            More_Link="/pdf/AIML.pdf"
+            Register_Link="https://docs.google.com/forms/d/e/1FAIpQLScK4PLwI2rBWJOzr8qh9j9PSCyw95EzG9N7q9IrUcl6D3tU3A/viewform"
+            More_Link="/pdf/FF.pdf"
           />
         </BentoTilt>
 
@@ -314,7 +314,7 @@ Details of these rounds will be revealed on the day."
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_1 parallelchild row-span-1 ms-32 md:col-span-1 md:ms-0 cardR">
+        <BentoTilt className="bento-tilt_1 parallelchild row-span-1 ms-32 md:col-span-1 md:ms-0 md:row-span-1 cardR">
           <BentoCard
             src="videos/feature-3.mp4"
             title={<>Ecovision 2k25</>}
@@ -325,6 +325,34 @@ Details of these rounds will be revealed on the day."
             isComingSoon
             Register_Link="https://docs.google.com/forms/d/e/1FAIpQLSe-OYIghaqr8w6F-Qp77azcvYqz5E0MbbDLQT5FHZrf4zW63Q/viewform?usp=dialog"
             More_Link="https://technobash.shanacoder.com"
+          />
+        </BentoTilt>
+
+
+      </div>
+      <div className="grid w-full grid-cols-2 grid-rows-1 gap-7 main_card_body2 mt-[20px] h-fit">
+
+      <BentoTilt className="bento-tilt_1 parallelchild row-span-1 md:col-span-1 md:row-span-1 cardL">
+          <BentoCard
+            src="videos/flash.mp4"
+            title={<>flash</>}
+            content="We will give you a chit with 5 clues you have to Find that And Take A Selfie With it. The team which will come within given time With clear Selfie including the Clues Will be Qualified For Next Round."
+            description=""
+            isComingSoon
+            Register_Link="https://example.com/register1"
+            More_Link="/pdf/newEvent1.pdf"
+          />
+        </BentoTilt>
+
+        <BentoTilt className="bento-tilt_1 parallelchild row-span-1 ms-32 md:col-span-1 md:ms-0 cardR">
+          <BentoCard
+            src="videos/feature-4.mp4"
+            title={<>project paragon </>}
+            content="Project Paragon is a plaƞorm for students to showcase their innovaƟve projects and soluƟons across various domains, including ArƟficial Intelligence, Data Science, IoT, RoboƟcs, and more. The event is aimed at fostering creaƟvity, technical skills, and presentaƟon abiliƟes among parƟcipants."
+            description=""
+            isComingSoon
+            Register_Link="https://docs.google.com/forms/d/e/1FAIpQLSd2L9pTWAy0P-evN5IAV99uXVd01vHNGMbg2-f3lhO5-f2khg/viewform"
+            More_Link="/pdf/PP.pdf"
           />
         </BentoTilt>
       </div>

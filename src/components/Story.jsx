@@ -8,7 +8,7 @@ const FloatingImage = () => {
   const frameRef = useRef(null);
 
   const [departmenthead, setDepartmenthead] = useState(
-    Array.from({ length: 12 }, (_, i) => `/img/departmenthead-${i + 1}.jpeg`)
+    Array.from({ length: 14 }, (_, i) => `/img/departmenthead-${i + 1}.jpeg`)
   );
 
   const [eventCoord, setEventCoord] = useState(
@@ -16,7 +16,7 @@ const FloatingImage = () => {
   );
 
   const [eventTeam, setEventTeam] = useState(
-    Array.from({ length: 9 }, (_, i) => `/img/eventTeam-${i + 1}.jpeg`)
+    Array.from({ length: 11 }, (_, i) => `/img/t${i + 1}.jpeg`)
   );
 
   const [isLoading, setIsLoading] = useState(false);
@@ -63,9 +63,9 @@ const FloatingImage = () => {
     <div className="layer">
       <div id="story" className="min-h-dvh w-screen bg-black text-blue-50">
         <div className="flex size-full flex-col items-center py-10 pb-24">
-          <p className="font-general text-sm uppercase md:text-[10px]">
+          {/* <p className="font-general text-sm uppercase md:text-[10px]">
             the multiversal ip world
-          </p>
+          </p> */}
 
           <div className="relative size-full">
             <AnimatedTitle
@@ -73,7 +73,7 @@ const FloatingImage = () => {
               containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10"
             />
 
-            <div className="story-img-container">
+            {/* <div className="story-img-container">
               <div className="story-img-mask">
                 <div className="story-img-content">
                   <div className="flex flex-row overflow-hidden w-auto">
@@ -89,7 +89,7 @@ const FloatingImage = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -160,10 +160,10 @@ const FloatingImage = () => {
         </ul>
       </div>
 
-      {/* Event Teams Section */}
+      {/* faculty coordinators Section */}
       <div className="firstheading3">
         <AnimatedTitle
-          title="Event Teams"
+          title="faculty coordinators"
           containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10"
         />
       </div>
@@ -173,7 +173,7 @@ const FloatingImage = () => {
             <li key={index}>
               <img
                 src={image}
-                alt={`gallery-${index + 1}.webp`}
+                alt={`t${index + 1}.webp`}
                 className="w-60 h-60 object-cover rounded-lg shadow-lg Rishi_img"
               />
             </li>
@@ -185,7 +185,7 @@ const FloatingImage = () => {
             <li key={index}>
               <img
                 src={image}
-                alt={`gallery-${index + 1}.webp`}
+                alt={`t${index + 1}.webp`}
                 className="w-60 h-60 object-cover rounded-lg shadow-lg Rishi_img"
               />
             </li>
